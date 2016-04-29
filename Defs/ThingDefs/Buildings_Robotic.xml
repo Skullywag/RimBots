@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RCU</defName>
+    <thingClass>RimBots.Building_RCU</thingClass>
+    <label>drone control unit</label>
+    <description>An AI controlled computer system able to control a number of basic robotic drones.</description>
+    <graphicData>
+      <texPath>Things/RCU</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0.15,0.15,1.7,1.7)</rect>
+      </damageData>
+    </graphicData>
+    <size>(2,2)</size>
+    <altitudeLayer>Waist</altitudeLayer>
+    <rotatable>true</rotatable>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <fillPercent>0.40</fillPercent>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>60</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <costList>
+      <Steel>100</Steel>
+      <Plasteel>50</Plasteel>
+      <Gold>20</Gold>
+      <AIPersonaCore>1</AIPersonaCore>    
+  </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <designationCategory>Misc</designationCategory>
+  </ThingDef>
+
+  <!--<ThingDef ParentName="BuildingBase">
+    <defName>BuildingQuadcopter</defName>
+    <thingClass>Quadcopter.Building_Quadcopter</thingClass>
+    <label>quadcopter</label>
+    <description>A small drone able to carry small loads. Needs a control unit to function.</description>
+    <graphicData>
+      <texPath>Things/Quadcopter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(1,1)</size>
+    <altitudeLayer>Waist</altitudeLayer>
+    <rotatable>true</rotatable>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <WorkToMake>60</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>-->
+
+</ThingDefs>

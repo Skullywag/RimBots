@@ -1,0 +1,20 @@
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\RimBots\Source\RimBots\obj\Debug\RimBots.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\RimBots\Source\RimBots\bin\Debug\RimBots.dll
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\RimBots\Source\RimBots\bin\Debug\RimBots.pdb
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\RimBots\Source\RimBots\obj\Debug\RimBots.dll
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\RimBots\Source\RimBots\obj\Debug\RimBots.pdb
+C:\Users\mjsku\Desktop\RimWorld1123WinDev\Mods\RimBots\Source\RimBots\obj\Debug\RimBots.dll
+C:\Users\mjsku\Desktop\RimWorld1123WinDev\Mods\RimBots\Source\RimBots\obj\Debug\RimBots.pdb
+C:\Users\mjsku\Desktop\RimWorld1123WinDev\Mods\RimBots\Source\RimBots\bin\Debug\RimBots.dll
+C:\Users\mjsku\Desktop\RimWorld1123WinDev\Mods\RimBots\Source\RimBots\bin\Debug\RimBots.pdb
+C:\Users\mjsku\Desktop\RimWorld1123WinDev\Mods\RimBots\Source\RimBots\obj\Debug\RimBots.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\RimBots\Source\RimBots\bin\Debug\RimBots.dll
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\RimBots\Source\RimBots\bin\Debug\RimBots.pdb
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\RimBots\Source\RimBots\obj\Debug\RimBots.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\RimBots\Source\RimBots\obj\Debug\RimBots.dll
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\RimBots\Source\RimBots\obj\Debug\RimBots.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\RimBots\Source\RimBots\bin\Debug\RimBots.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\RimBots\Source\RimBots\bin\Debug\RimBots.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\RimBots\Source\RimBots\obj\Debug\RimBots.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\RimBots\Source\RimBots\obj\Debug\RimBots.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\RimBots\Source\RimBots\obj\Debug\RimBots.pdb

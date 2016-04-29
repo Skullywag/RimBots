@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyDef>
+    <defName>Quadcopter</defName>
+    <label>quadcopter</label>
+    <corePart>
+      <def>MainHull</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+      <parts>
+        <li>
+          <def>CPUHousing</def>
+          <coverage>0.08</coverage>
+          <height>Top</height>
+          <groups>
+            <li>CoveredByNaturalArmor</li>
+          </groups>
+          <parts>
+            <li>
+              <def>CPU</def>
+              <coverage>0.2</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>LeftCamera</def>
+              <coverage>0.15</coverage>
+            </li>
+            <li>
+              <def>RightCamera</def>
+              <coverage>0.15</coverage>
+            </li>
+            <li>
+              <def>LeftMic</def>
+              <coverage>0.05</coverage>
+            </li>
+            <li>
+              <def>RightMic</def>
+              <coverage>0.05</coverage>
+            </li>
+            <li>
+              <def>OdorSensor</def>
+              <coverage>0.1</coverage>
+            </li>
+            <li>
+              <def>Light</def>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+</Defs>

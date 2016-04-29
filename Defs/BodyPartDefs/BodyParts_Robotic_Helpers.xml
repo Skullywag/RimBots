@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartDef>
+    <defName>CPUHousing</defName>
+    <label>cpu housing</label>
+    <hitPoints>30</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>LeftCamera</defName>
+    <label>left camera</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <useDestroyedOutLabel>true</useDestroyedOutLabel>
+    <activities>
+      <li>Sight_source</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightCamera</defName>
+    <label>right camera</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <useDestroyedOutLabel>true</useDestroyedOutLabel>
+    <activities>
+      <li>Sight_source</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>LeftMic</defName>
+    <label>left microphone</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <activities>
+      <li>Hearing_source</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightMic</defName>
+    <label>right microphone</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <activities>
+      <li>Hearing_source</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>OdorSensor</defName>
+    <label>odor sensor</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>MainHull</defName>
+    <label>main hull</label>
+    <hitPoints>100</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <activities>
+      <li>Moving_tool</li>
+      <li>Manipulation_tool</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>CPU</defName>
+    <label>central processing unit</label>
+    <hitPoints>30</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <activities>
+      <li>Consciousness_brain</li>
+    </activities>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Light</defName>
+    <label>light</label>
+    <hitPoints>20</hitPoints>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+  </BodyPartDef>
+  
+</Defs>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThinkTrees>
+
+	<ThinkTreeDef>
+		<defName>Robotic_Hauler</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+        
+        <!-- No control Unit-->
+        <li Class="RimBots.ThinkNode_ConditionalControl">
+          <subNodes>
+            <li Class="RimBots.JobGiver_IdleCheck" />
+          </subNodes>
+        </li>
+        
+        <!-- Move to position -->
+        <li Class="ThinkNode_ConditionalForcedGoto">
+          <subNodes>
+            <li Class="JobGiver_ForcedGoto" />
+          </subNodes>
+        </li>
+        
+        <!-- Do useful things for the colony-->
+        <li Class="ThinkNode_ConditionalHasFaction">
+          <subNodes>
+            <li Class="JobGiver_Haul" />
+          </subNodes>
+        </li>
+
+        <li Class="ThinkNode_ConditionalHasFaction">
+          <subNodes>
+            <li Class="JobGiver_WanderColony">
+              <maxDanger>None</maxDanger>
+            </li>
+          </subNodes>
+        </li>
+        
+        <li Class="JobGiver_WanderAnywhere">
+          <maxDanger>Deadly</maxDanger>
+        </li>
+        
+        <li Class="JobGiver_IdleError"/>
+      </subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+
+</ThinkTrees>

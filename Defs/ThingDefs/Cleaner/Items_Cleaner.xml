@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="UnfinishedBase" Abstract="True">
+    <thingClass>UnfinishedThing</thingClass>
+    <category>Item</category>
+    <label>Unfinished thing</label>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedSculpture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <useHitPoints>true</useHitPoints>
+    <isUnfinishedThing>true</isUnfinishedThing>
+    <selectable>true</selectable>
+    <tradeability>Never</tradeability>
+    <drawerType>RealtimeOnly</drawerType>
+    <!-- For CompForbiddable -->
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+    <thingCategories>
+      <li>Unfinished</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>UnfinishedBot</defName>
+    <label>Unfinished bot</label>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories />
+    <tickerType>Normal</tickerType>
+  </ThingDef>
+
+  <ThingDef Name="MinifiedBase" Abstract="True">
+    <thingClass>MinifiedThing</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <!-- for CompForbiddable -->
+    <drawerType>RealtimeOnly</drawerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureBase">
+    <defName>RimbaBuilding</defName>
+    <thingClass>RimBots.CleanerSpawner</thingClass>
+    <label>Rimba</label>
+    <graphicData>
+      <texPath>Things/Rimba</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>24000</WorkToMake>
+    </statBases>
+    <description>A bot used for cleaning, currently not enabled.</description>
+    <pathCost>30</pathCost>
+    <fillPercent>0.30</fillPercent>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <unfinishedThingDef>UnfinishedBot</unfinishedThingDef>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+    </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <costList>
+      <Steel>150</Steel>
+      <Components>10</Components>
+      <Plasteel>30</Plasteel>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="MinifiedBase">
+    <defName>MinifiedCleaner</defName>
+    <label>Rimba</label>
+    <description>A bot used for cleaning, currently not enabled.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Rimba</texPath>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+  </ThingDef>
+
+</Defs>

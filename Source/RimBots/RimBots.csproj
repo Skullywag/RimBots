@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A36BEEB2-7379-475B-B537-827E34571962}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RimBots</RootNamespace>
+    <AssemblyName>RimBots</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>Source-DLLs\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>Source-DLLs\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Building_RCU.cs" />
+    <Compile Include="JobGivers\JobGiver_Clear.cs" />
+    <Compile Include="JobGivers\JobGiver_GrowHarvest.cs" />
+    <Compile Include="JobGivers\JobGiver_GrowSow.cs" />
+    <Compile Include="JobGivers\JobGiver_Mine.cs" />
+    <Compile Include="JobGivers\JobGiver_Cook.cs" />
+    <Compile Include="JobGivers\JobGiver_Shear.cs" />
+    <Compile Include="JobGivers\JobGiver_Milk.cs" />
+    <Compile Include="JobGivers\JobGiver_Clean.cs" />
+    <Compile Include="JobGivers\JobGiver_IdleCheck.cs" />
+    <Compile Include="Pawns\PawnMiner.cs" />
+    <Compile Include="Pawns\PawnShearer.cs" />
+    <Compile Include="Pawns\PawnMilker.cs" />
+    <Compile Include="Pawns\PawnGrower.cs" />
+    <Compile Include="Pawns\PawnQuadcopter.cs" />
+    <Compile Include="Pawns\PawnRimba.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spawners\HaulerSpawner.cs" />
+    <Compile Include="Spawners\CleanerSpawner.cs" />
+    <Compile Include="StockGenerator_Bots.cs" />
+    <Compile Include="ThinkNode_ConditionalControl.cs" />
+    <Compile Include="WorkGiver_Clean.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Source-DLLs\Assembly-CSharp.dll" />
+    <Content Include="Source-DLLs\UnityEngine.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

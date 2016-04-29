@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-TraderKindDef>
+
+  <TraderKindDef>
+    <defName>PirateMerchant</defName>
+    <label>pirate merchant</label>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>
+          <min>4000</min>
+          <max>6000</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_Slaves">
+        <countRange>
+          <min>2</min>
+          <max>3</max>
+        </countRange>
+      </li>
+      <li Class="RimBots.StockGenerator_Bots">
+        <countRange>
+          <min>2</min>
+          <max>3</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_WeaponsRanged">
+        <countRange>
+          <min>-1</min>
+          <max>2</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_Armor">
+        <countRange>
+          <min>-2</min>
+          <max>2</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Beer</thingDef>
+        <totalPriceRange>
+          <min>-300</min>
+          <max>300</max>
+        </totalPriceRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Medicine</thingDef>
+        <price>Expensive</price>
+        <countRange>
+          <min>5</min>
+          <max>15</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>BodyPartOrImplant</tradeTag>
+        <thingDefCountRange>
+          <min>-4</min>
+          <max>5</max>
+        </thingDefCountRange>
+        <countRange>
+          <min>1</min>
+          <max>1</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Implant</tradeTag>
+        <thingDefCountRange>
+          <min>-5</min>
+          <max>1</max>
+        </thingDefCountRange>
+        <countRange>
+          <min>1</min>
+          <max>1</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Artifact</tradeTag>
+        <thingDefCountRange>
+          <min>-5</min>
+          <max>1</max>
+        </thingDefCountRange>
+        <countRange>
+          <min>1</min>
+          <max>1</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ArtilleryShell</thingDef>
+        <countRange>
+          <min>-10</min>
+          <max>40</max>
+        </countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+
+</DefPackage-TraderKindDef>
